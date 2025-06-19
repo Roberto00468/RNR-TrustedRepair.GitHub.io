@@ -9,19 +9,14 @@
     header, footer { background: #f4f4f4; text-align: center; padding: 1rem; }
     nav a { margin: 0 1rem; text-decoration: none; color: #007BFF; }
     .hero { background: #007BFF; color: white; text-align: center; padding: 3rem 1rem; }
-    .btn {
-      background: #28a745; color: white;
-      padding: 0.5rem 1rem; text-decoration: none;
-      border-radius: 5px; display: inline-block; margin-top: 1rem;
-    }
+    .btn { background: #28a745; color: white; padding: 0.5rem 1rem; border-radius: 5px; text-decoration: none; display: inline-block; margin-top: 1rem; }
     .features { padding: 2rem; display: flex; flex-direction: column; gap: 1rem; }
     .features div { background: #eee; padding: 1rem; border-radius: 8px; }
     img.logo { height: 60px; margin-bottom: 10px; }
     section { padding: 2rem; }
-    input, textarea {
-      width: 100%; padding: 0.5rem; margin-bottom: 0.5rem; border-radius: 4px; border: 1px solid #ccc;
-    }
+    input, textarea { width: 100%; padding: 0.5rem; margin-bottom: 0.5rem; border-radius: 4px; border: 1px solid #ccc; }
     form { max-width: 500px; margin: auto; }
+    iframe { width: 100%; border: none; border-radius: 8px; }
   </style>
 </head>
 <body>
@@ -34,73 +29,70 @@
     <nav>
       <a href="#services">Services</a>
       <a href="#reviews">Reviews</a>
-      <a href="#about">About</a>
+      <a href="#feedback">Leave Feedback</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <section class="hero">
     <h2>Eco-Smart Handyman Services in the Fresno Area</h2>
-    <p>Flat-rate pricing • 24-hour response • Memberships Available</p>
+    <p>Flat‑rate pricing • 24‑hour response • Memberships Available</p>
     <a href="#contact" class="btn">Book Now</a>
   </section>
 
   <section id="services" class="features">
     <div>
-      <h3>Flat-Rate Services</h3>
+      <h3>Flat‑Rate Services</h3>
       <p>Toilet repair, door installation, drywall patching and more</p>
     </div>
     <div>
       <h3>Seasonal Packages</h3>
-      <p>Winter Prep • Smart-Home Setup • Maintenance Bundles</p>
+      <p>Winter Prep • Smart‑Home Setup • Maintenance Bundles</p>
     </div>
     <div>
       <h3>Emergency Help</h3>
-      <p>Guaranteed 24-hour response time on urgent calls</p>
+      <p>Guaranteed 24‑hour response time on urgent calls</p>
     </div>
   </section>
 
-  <section id="reviews" style="background-color: #f9f9f9;">
+  <section id="reviews" style="background-color:#f9f9f9;">
     <h2 style="text-align:center;">What Our Clients Say</h2>
-    <div style="max-width: 700px; margin: auto;">
-      <blockquote style="margin: 1.5rem 0; font-style: italic; border-left: 5px solid #007BFF; padding-left: 1rem;">
-        “RNR TrustedRepair fixed my door and even cleaned up after — professional, fast, and friendly!”<br><strong>- Maria G.</strong>
+    <div style="max-width:700px; margin:auto;">
+      <blockquote style="margin:1.5rem 0; font-style:italic; border-left:5px solid #007BFF; padding-left:1rem;">
+        “RNR TrustedRepair fixed my door and even cleaned up after — professional and friendly!”<br><strong>– Maria G.</strong>
       </blockquote>
-      <blockquote style="margin: 1.5rem 0; font-style: italic; border-left: 5px solid #007BFF; padding-left: 1rem;">
-        “Affordable and reliable! They showed up on time and finished the job in one visit.”<br><strong>- Jason T.</strong>
+      <blockquote style="margin:1.5rem 0; font-style:italic; border-left:5px solid #007BFF; padding-left:1rem;">
+        “Earned our trust with fast, reliable work. Highly recommend!”<br><strong>– Jason T.</strong>
       </blockquote>
+    </div>
+  </section>
+
+  <section id="feedback" style="background-color:#e6f7ff;">
+    <h2 style="text-align:center;">Leave a Review or Request a Quote</h2>
+    <div style="max-width:800px; margin:auto;">
+      <!-- LIVE GOOGLE FORM EMBED -->
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdXXXXXXXXXXXXXXX/viewform?embedded=true" height="600" loading="lazy">
+        Loading…
+      </iframe>
     </div>
   </section>
 
   <section id="about">
     <h2>About RNR TrustedRepair</h2>
-    <p>We combine eco-conscious handyman work with tech-smart upgrades. Certified and community-focused. Based in Fresno, we proudly serve surrounding cities including Clovis, Madera, Sanger, Selma, and more.</p>
+    <p>We combine eco‑conscious handyman work with tech‑smart upgrades. Certified and community‑focused. Based in Fresno, we serve Fresno and surrounding cities including Clovis, Madera, Sanger, Selma, and more.</p>
   </section>
 
-  <section id="contact" style="text-align: center;">
+  <section id="contact" style="text-align:center;">
     <h2>Get in Touch</h2>
     <p>Email us at <strong>rnrtrustedrepair@gmail.com</strong> or call <strong>(559) 505‑0072</strong></p>
     <a href="tel:5595050072" class="btn">📞 Call Now</a>
     <a href="mailto:rnrtrustedrepair@gmail.com" class="btn">✉️ Email Us</a>
   </section>
 
-  <section id="quote" style="background-color: #e6f7ff; text-align: center;">
-    <h2>Request a Free Quote</h2>
-    <form action="mailto:rnrtrustedrepair@gmail.com" method="POST" enctype="text/plain">
-      <input type="text" name="Name" placeholder="Your Name" required><br>
-      <input type="email" name="Email" placeholder="Your Email" required><br>
-      <textarea name="Message" placeholder="Describe the repair or service you need..." rows="5" required></textarea><br>
-      <button type="submit" class="btn">Submit Request</button>
-    </form>
-  </section>
-
-  <section id="map" style="text-align: center;">
+  <section id="map" style="text-align:center;">
     <h2>Service Area</h2>
     <p>We travel throughout Fresno and nearby communities.</p>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51126.809626192145!2d-119.84284627292686!3d36.737880474666085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80945de2145f535d%3A0xe7d2935e3253a564!2sFresno%2C%20CA!5e0!3m2!1sen!2sus!4v1718757600000!5m2!1sen!2sus"
-      width="100%" height="300" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy">
-    </iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51126.809626192145!2d-119.84284627292686!3d36.737880474666085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80945de2145f535d%3A0xe7d2935e3253a564!2sFresno%2C%20CA!5e0!3m2!1sen!2sus!4v1718757600000!5m2!1sen!2sus" width="100%" height="300" style="border:0; border-radius:8px;" allowfullscreen="" loading="lazy"></iframe>
   </section>
 
   <footer>
